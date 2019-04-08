@@ -96,8 +96,18 @@ bottomText[2].querySelector("p").textContent = siteContent["main-content"]["visi
 
 //Contact
 
+let contactHeader = document.querySelector(".contact h4");
+contactHeader.textContent = siteContent["contact"]["contact-h4"];
 
+let contactPs = document.querySelectorAll(".contact p");
+contactPs[0].textContent = siteContent["contact"]["address"];
+contactPs[1].textContent = siteContent["contact"]["phone"];
+contactPs[2].textContent = siteContent["contact"]["email"];
 
+//Footer
+
+let footer = document.querySelector("footer");
+footer.textContent = siteContent["footer"]["copyright"];
 
 
 //document.querySelectorAll('.jumbotron li')[0-2]
